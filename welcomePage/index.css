@@ -1,0 +1,224 @@
+body{
+    background-color: #082032;
+    padding-left: 90px;
+    margin-right: 70px;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 500px;
+    padding-bottom: 3000px;
+}
+
+.header{
+    height: 500px;
+    order: 2px solid white;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-info-container{
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 500px;
+    order: 5px solid red;
+}
+
+.background-picture-container{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 500px;
+    z-index: 100;
+}
+
+.background-picture-container::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height of the gradient fade */
+  background-image: linear-gradient(to bottom, transparent, #082032); /* Adjust the gradient colors as needed */
+  mask-image: linear-gradient(to bottom, transparent, black); /* Adjust the fade-off colors as needed */
+  mask-size: 100% 150px;
+  mask-repeat: no-repeat;
+  pointer-events: none; /* Allow interactions with the image */
+}
+
+
+.background-picture-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.6;
+    transition: opacity 1s ease;
+}
+
+.background-picture-container
+
+.movie-info{
+    box-sizing: border-box;
+    z-index: 200;
+    font-size: 30px;
+    position: relative;
+    order: 3px solid rgb(255, 89, 0);
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    transform: translate(-50%, -50%);
+}
+
+.movie-info div{
+}
+
+.header-title-container{
+    order: 2px solid rgb(68, 203, 167);
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+
+.header-title{
+    order: 2px solid rgb(65, 60, 162);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons-runtime-container{
+    height: 20%;
+    display: flex;
+    order: 2px solid rgb(113, 198, 29);
+}
+
+.header-genres-buttons{
+    order: 2px solid rgb(232, 244, 10);
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 100%;
+}
+
+.header-genres-buttons input{
+    margin-right: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 3px 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.button-1{
+    border-bottom: 3px solid #FF8400;
+}
+
+.button-2{
+    border-bottom: 3px solid #00C4FF;
+}
+
+.button-3{
+    border-bottom: 3px solid #FF0060;
+}
+
+.header-elements{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.runtime{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.rating{
+    color: #E8AA42;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.rating2{
+    color: #E8AA42;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.header-description-container{
+    order: 2px solid rgb(255, 0, 183);
+    width: 100%;
+    height: 36%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-description{
+   margin-top: 5px;
+   position: absolute;
+   top: 10;
+   font-family: 'Rubik', sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   color: #DDE6ED;  
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 4;
+   overflow: hidden;
+}
+
+.forward-backward-buttons{
+    order: 2px solid lime;
+    display: flex;
+    align-items: center;
+    
+}
+
+.forward-button,
+.backward-button{
+    transition: background-color 0.3s ease;
+    transition: color 0.4s ease,
+    border 0.4s ease;
+    color: black;
+    border-top: 0px solid #C4DFDF;
+    border-left: 0px solid #C4DFDF;
+    border-right: 0px solid #C4DFDF;
+    padding: 3px 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom: 3px solid #C4DFDF;
+    font-weight: 800;
+}
+
+.forward-button:hover,
+.backward-button:hover{
+    border: 3px solid #C4DFDF;
+    background-color: transparent;
+    color: white;
+}
+
+.forward-button{
+    margin-left: 20px;
+}

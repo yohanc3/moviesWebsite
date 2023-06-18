@@ -1,0 +1,111 @@
+
+.movies-grid-top{
+    margin-top: 10px;
+    order: 1px solid white;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:;
+}
+
+.movies-grid-title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    order: 1px solid red;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -3px;
+}
+
+.movies-grid-buttons{
+    margin-left: 20px;
+    order: 1px solid blue;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.movies-grid-buttons button{
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+    order: 1px solid green;
+    height: 45px;
+}
+
+.movies-grid-buttons button.clicked{
+    border-bottom: 3px solid #C4DFDF;
+    border-radius: 2px;
+}
+
+.movies-grid{
+    order: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-right: 260px;
+}
+
+.movie-card{
+    order: 2px solid rgb(70, 70, 237);
+    height: ;
+    width: 100%;
+}
+
+.poster{
+    order: 1px solid rgb(17, 223, 48);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-year{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    font-size: 11px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #E8AA42;
+    padding: 1% 2%;
+    border-radius: 17px;
+}
+
+.poster-image{
+    order: 2px solid orangered;
+    object-fit: cover;
+    width: 100%;
+    height: ;
+    border-radius: 9px;
+
+}
+
+.movie-name-container{
+    order: 2px solid yellow;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+}
+
+.movie-name{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+

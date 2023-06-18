@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Movies website</title>
+         <link href="/generalStyles/topbar.css" rel="stylesheet">
+         <link href="welcomePage/index.css" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+         <link href="generalStyles/moviesGrid.css" rel="stylesheet">
+    </head>
+
+    <body onload="">
+
+        <!--TOP BAR-->
+        <div class="top-bar" style="background: none;">
+            <div class="elements">
+                <div class="left-side">
+                    <div class="site-name">
+                        <img src="final white no back.png" class="logo">
+                    </div>
+                    <input type="submit" value="Home" class="home" id="home">
+                    <input type="submit" value="Discover" class="discover" id="discover">
+                </div>
+                <div class="right-side"><input type="text" placeholder="search" id="search" class="search">
+                </div>
+            </div>
+        </div>
+
+        <!--HEADER-->
+        
+        <header class="header" id="header">
+          <div class="header-info-container">
+            <div class="background-picture-container">
+              <img src="" class="cat2" id="image-test">
+                <div class="movie-info">
+                  <div class="header-title-container" id="header-title-container">
+                    <p class="header-title" id="header-title"></p>
+                  </div>
+                  <div class="header-elements">
+                    <div class="runtime" id="runtime">
+                    </div>
+                    <div class="rating" id="rating">
+                    </div><div class="rating2">/10</div>
+                  </div>
+                
+                  <div class="header-buttons-runtime-container">
+                    <div class="header-genres-buttons" id="header-genres-buttons">
+                        <input id="button-1" class="button-1" value="" type="submit"></input>
+                        <input id="button-2" class="button-2" value="" type="submit"></input>
+                        <input id="button-3" class="button-3" value="" type="submit"></input>
+                    </div>
+                  </div>
+                
+                  <div class="header-description-container"   id="header-description-container">
+                    <p id="header-description" class="header-description"></p>
+                  </div>
+                  <div class="forward-backward-buttons">
+                    <input type="submit" class="backward-button" value="<" id="last-timer">
+                    <input type="submit" class="forward-button" value=">" id="next-timer">
+                  </div>
+                </div>
+            </div> 
+
+            
+             
+            </div>
+        </header>
+
+        <!-- MOVIES GRID -->
+
+        <section class="movies-grid-top">
+            <h2 class="movies-grid-title">Movies</h2>
+            <div class="movies-grid-buttons">
+                <button id="movies-popular-button" value="popular">POPULAR</button>
+                <button id="movies-trending-button" value="trending">TRENDING</button>
+                <button id="movies-recent-button" value="recent">RECENT</button>
+            </div>
+            
+        </section>
+
+        <div class="movies-grid" id="movies-grid">
+           <!--<div class="movie-card">
+                <div class="poster">
+                    <div>
+                     </div
+                    <img src="fast-x-poster.webp" class="poster-image">   
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-container">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                                         
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster">
+                    <img src="fast-x-poster.webp" class="poster-image">
+                       <p class="movie-year">
+                        2023
+                       </p>                     
+                </div>
+                <div class="movie-name-year">
+                    <p class="movie-name">
+                        Fast X
+                    </p>
+                </div>
+            </div>
+            -->
+        </div>
+
+       
+
+       
+
+        <script src="generalScripts/header.js"></script>
+        <script src="generalScripts/switchpages.js"></script>
+        <script src="generalScripts/generateMovies.js"></script>
+        
+    </body>
+</html>
+
+
+
+
