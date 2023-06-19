@@ -42,7 +42,7 @@ body{
   left: 0;
   right: 0;
   width: 100%;
-  height: 100px; /* Adjust the height of the gradient fade */
+  height: 400px; /* Adjust the height of the gradient fade */
   background-image: linear-gradient(to bottom, transparent, #082032); /* Adjust the gradient colors as needed */
   mask-image: linear-gradient(to bottom, transparent, black); /* Adjust the fade-off colors as needed */
   mask-size: 100% 150px;
