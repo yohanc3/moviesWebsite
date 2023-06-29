@@ -62,8 +62,6 @@ body{
     transition: opacity 1s ease;
 }
 
-.background-picture-container
-
 .movie-info{
     box-sizing: border-box;
     z-index: 200;
@@ -210,6 +208,7 @@ body{
     border-top-right-radius: 2px;
     border-bottom: 3px solid #C4DFDF;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .forward-button:hover,
@@ -222,3 +221,4 @@ body{
 .forward-button{
     margin-left: 20px;
 }
+
