@@ -9,6 +9,10 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
          <link href="generalStyles/moviesGrid.css" rel="stylesheet">
+         <link href="/generalStyles/sidebar.css" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
 
     <body onload="">
@@ -90,111 +94,71 @@
                         2023
                        </p>                     
                 </div>
-                <div class="movie-name-container">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                       <p class="movie-year">
-                        2023
-                       </p>                     
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                       <p class="movie-year">
-                        2023
-                       </p>                     
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                       <p class="movie-year">
-                        2023
-                       </p>                     
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                       <p class="movie-year">
-                        2023
-                       </p>                     
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                                         
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                       <p class="movie-year">
-                        2023
-                       </p>                     
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <div class="poster">
-                    <img src="fast-x-poster.webp" class="poster-image">
-                       <p class="movie-year">
-                        2023
-                       </p>                     
-                </div>
-                <div class="movie-name-year">
-                    <p class="movie-name">
-                        Fast X
-                    </p>
-                </div>
-            </div>
             -->
         </div>
 
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+            <div class="sidebar-container">
+
+                <!--Topbar of sidebar (ironic enough)-->
+                <section class="sidebar-title-container">
+                    <div class="sidebar-title">
+                       Top Movies
+                    </div>
+                    <div class="sidebar-today-week">
+                        <button class="sidebar-today-button" id="sidebar-today-button" value="today">
+                            Today
+                        </button>
+                        <button class="sidebar-week-button" id="sidebar-week-button" value="week"> 
+                            Week
+                        </button>
+                    </div>
+                </section>
+                
+
+                <section class="sidebar-movies-list"id="sidebar-movies-list">
+                    <!--Sidebar top 1 container-->
+                    <!-- <div class="sidebar-movie-top-1-container">
+                        <div class="sidebar-movie-top-1-container-image">
+                            <img class="sidebar-movie-top-1-image" src="kimetsu.png">
+                        </div>
+                        <div class="sidebar-movie-1-container">
+                            <div class="sidebar-ranking-1-container">
+                                <button class="sidebar-ranking-1">1</button> 
+                            </div>
+                            <div class="sidebar-ranking-1-title">
+                                Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc
+                            </div> 
+                        </div>
+                    </div> -->
+
+                    <!--Rest of the movies (2-10)-->
+                    <section class="sidebar-movies-container" id="sidebar-movies-container">
+                        <!-- <div class="sidebar-ranking-container">
+                            <div class="sidebar-ranking">
+                                <div class="sidebar-ranking-number">
+                                    2
+                                </div>
+                            </div>
+                            <div class="sidebar-ranking-image-container">
+                                <img src="fast x poster.jpeg">
+                            </div>
+                            <div class="sidebar-ranking-title-container">
+                                <div class='sidebar-ranking-title'>The Aristocrat's Otherworldly Adventure: Serving Gods Who Go Too Far</div>
+                                <div class="sidebar-ranking-info">
+                                    8/10 2h 20m
+                                </div>
+                            </div> 
+                        </div> -->
+
+                    </section>
+
+                </section>
+              
+            </div>
+        </div>
        
 
        
@@ -202,6 +166,7 @@
         <script src="generalScripts/header.js"></script>
         <script src="generalScripts/switchpages.js"></script>
         <script src="generalScripts/generateMovies.js"></script>
+        <script src="generalScripts/generateSidebar.js"></script>
         
     </body>
 </html>

@@ -12,9 +12,10 @@ var options = {
 let counter = 0;
 let maxCounter = 9;
 let timer;
-
 let popularMoviesData;
 let moviesGenresIds;
+
+let popularMoviesFinalData = [];
 
 /// GET MOVIES INFO AND START COUNTER
 
@@ -24,7 +25,6 @@ async function start() {
 
     await getMoviesInfo();
     await startHeader();
-
 }
 
 async function getMoviesInfo(){
@@ -34,6 +34,17 @@ async function getMoviesInfo(){
         popularMoviesData = (await fetchPopularMoviesData()).results.slice(0, maxCounter);
 
         moviesGenresIds = (await fetchMoviesGenresIds()).genres;
+
+        for(const movie of popularMoviesData){
+            let movieFinalData;
+
+            movieFinalData = await fetchMovieDetails(movie.id);
+
+            popularMoviesFinalData.push(movieFinalData);
+
+            console.log(movieFinalData);
+
+        }
 
     }
 
@@ -89,8 +100,8 @@ async function incrementCounter(){
 
     let runtimeAndVote = document.getElementById('runtime');
     let runtime;
-    let runtimeHours = Math.trunc((await fetchMovieDetails(popularMoviesData[counter].id)).runtime/60);
-    let runtimeMinutes = (((await fetchMovieDetails(popularMoviesData[counter].id)).runtime/60) - runtimeHours) * 60;
+    let runtimeHours = Math.trunc(popularMoviesFinalData[counter].runtime/60);
+    let runtimeMinutes = ((popularMoviesFinalData[counter].runtime/60) - runtimeHours) * 60;
 
     runtime = `${runtimeHours}h ${runtimeMinutes.toFixed(0)}min`;
 
@@ -98,8 +109,7 @@ async function incrementCounter(){
 
 
     let rating = document.getElementById('rating');
-    let movieRating = ((await fetchMovieDetails(popularMoviesData[counter].id)).vote_average).toFixed(1);
-
+    let movieRating = popularMoviesFinalData[counter].vote_average.toFixed(1);
     rating.textContent = `${movieRating}`;
     
     /// SETTING MOVIE DESCRIPTION

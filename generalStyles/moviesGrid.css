@@ -10,6 +10,7 @@
 }
 
 .movies-grid-title{
+    order: 1px solid gray;
     margin: 0;
     font-size: 40px;
     font-weight: 600;
@@ -35,7 +36,7 @@
     font-weight: 500;
     background-color: transparent;
     border: none;
-    transition: border-color 0.3s ease;
+    transition: border-bottom 0.3s ease;
     font-size: 16px;
     order: 1px solid green;
     height: 45px;

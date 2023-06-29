@@ -2,13 +2,17 @@ let popularMoviesButton = document.getElementById('movies-popular-button');
 let trendingMoviesButton = document.getElementById('movies-trending-button');
 let recentMoviesButton = document.getElementById('movies-recent-button');
 
+let buttons = [popularMoviesButton, trendingMoviesButton, recentMoviesButton];
+
 let moviesGrid = document.getElementById('movies-grid')
 
 popularMoviesButton.addEventListener('click', generateMovies);
 trendingMoviesButton.addEventListener('click', generateMovies);
 recentMoviesButton.addEventListener('click', generateMovies);
 
-popularMoviesButton.classList.add('clicked')
+
+
+popularMoviesButton.classList.add('clicked');
 generatePopularMovies();
 
 async function generateMovies(e){
@@ -21,13 +25,13 @@ async function generateMovies(e){
         
     }
 
-    if(e.target.value === 'trending'){
+    else if(e.target.value === 'trending'){
 
         generateTrendingMovies();
 
     }
 
-    if(e.target.value === 'recent'){
+    else if(e.target.value === 'recent'){
 
         generateRecentMovies();
 
@@ -36,8 +40,6 @@ async function generateMovies(e){
 }
 
 function highlightMoviesButtons(e){
-    let buttons = [popularMoviesButton, trendingMoviesButton, recentMoviesButton];
-
     
     buttons.map(button => {
         if((button.value !== e.target.value) && button.classList.contains('clicked')){
@@ -130,7 +132,6 @@ function buildMovie(movie, topRated){
     movieYear.classList.add('movie-year');
     movieYear.textContent = movie.release_date.substring(0, 4);
 
-
     let imagePoster = document.createElement('img');
     imagePoster.classList.add('poster-image');
     imagePoster.src = `https://image.tmdb.org/t/p/original${movie.poster_path}`;
@@ -178,7 +179,5 @@ function buildMovie(movie, topRated){
 
         poster.appendChild(ratingButton);
     }
-
-    console.log(movieCard);
 
 }
